@@ -1,0 +1,20 @@
+[package]
+name = "radixlab-core"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "RadixLab gate-level multi-valued logic simulator core"
+
+[lib]
+name = "_core"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = []
+# Python bindings. Enabled by maturin (see pyproject.toml); `cargo test` runs without it.
+python = ["dep:pyo3", "pyo3/extension-module"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+pyo3 = { version = "0.23", optional = true }

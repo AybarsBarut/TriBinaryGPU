@@ -1,0 +1,33 @@
+# RadixLab Experiment: M1 Sign Detection & Comparator Micro-Experiment
+# Hypothesis focus: H2 (Balanced Ternary Arithmetic) & Finding 2 (Sign trit detection)
+# Pre-registration status: frozen under prereg-v1
+experiment_id: m1_comparator_micro
+hypothesis_id: H2
+type: micro
+comparison_mode: iso-precision
+primary_metric: delay_ps
+delta_threshold: 0.10
+
+designs:
+  - GPU-B
+  - GPU-T
+
+widths:
+  - bits: 8
+    trits: 6
+    effective_bits_t: 9.51
+  - bits: 16
+    trits: 11
+    effective_bits_t: 17.43
+  - bits: 32
+    trits: 21
+    effective_bits_t: 33.28
+
+parameters:
+  n_vectors: 10000
+  base_seed: 42
+  sensitivity_range: 0.50  # +/- 50%
+
+outputs:
+  json: results/m1_comparator_results.json
+  report: docs/status/m1_comparator_report.md

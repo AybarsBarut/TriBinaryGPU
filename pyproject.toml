@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "radixlab"
+version = "0.1.0.dev0"
+description = "Binary vs ternary vs quaternary logic GPU simulation laboratory"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = ["numpy>=1.26", "scipy>=1.11", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "matplotlib>=3.8"]
+
+[project.scripts]
+radixlab = "radixlab.cli:main"
+
+[tool.maturin]
+manifest-path = "core/Cargo.toml"
+module-name = "radixlab._core"
+python-source = "."
+python-packages = ["radixlab"]
+features = ["python"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: long-running certification tests"]

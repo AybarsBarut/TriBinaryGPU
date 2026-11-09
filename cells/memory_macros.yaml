@@ -1,0 +1,37 @@
+# Parametric memory macro records (the only non-gate-level blocks, see docs/methodology.md section 5).
+#
+# ALL VALUES ARE PLACEHOLDERS (confidence: low): no verified source for multi-level memory density,
+# energy or latency exists in this repository yet (open question Q3). Results that depend on these
+# records must be shown with and without the memory term.
+#
+# Macro variants map to GPU designs:
+#   sram_b      GPU-B                 1 bit per cell
+#   sram_bt     GPU-BT                2 binary cells per trit (binary-encoded ternary)
+#   mlc_t       GPU-T                 1 trit per cell (multi-level)
+#   sram_q_1b   GPU-Q-1b              2 binary cells per quaternary digit (1 bit per cell)
+#   mlc_q_2b    GPU-Q-2b              1 quaternary digit per cell (2 bits per cell, multi-level)
+library: memory_macros
+version: 0.1.0
+status: reviewed   # structure reviewed; numeric values are flagged placeholders
+defaults:
+  area_per_cell:      {unit: um2, source_type: guess, confidence: low, group: memory_macro_density,
+                       source: "PLACEHOLDER relative cell area; no verified source (open question Q3)"}
+  read_energy_per_cell: {unit: fJ, source_type: guess, confidence: low, group: memory_macro_energy,
+                       source: "PLACEHOLDER; no verified source (open question Q3)"}
+  write_energy_per_cell: {unit: fJ, source_type: guess, confidence: low, group: memory_macro_energy,
+                       source: "PLACEHOLDER; no verified source (open question Q3)"}
+  leakage_per_cell:   {unit: nW, source_type: guess, confidence: low, group: memory_macro_leakage,
+                       source: "PLACEHOLDER; no verified source (open question Q3)"}
+  read_latency:       {unit: ps, source_type: guess, confidence: low, group: memory_macro_latency,
+                       source: "PLACEHOLDER; no verified source (open question Q3)"}
+macros:
+  - {name: sram_b,    macro: true, symbols_per_cell: 1,   values_per_symbol: 2, bits_per_cell: 1.0,
+     area_per_cell: 0.60, read_energy_per_cell: 0.50, write_energy_per_cell: 0.70, leakage_per_cell: 0.30, read_latency: 40.0}
+  - {name: sram_bt,   macro: true, cells_per_symbol: 2, values_per_symbol: 3, bits_per_cell: 1.0,
+     area_per_cell: 0.60, read_energy_per_cell: 0.50, write_energy_per_cell: 0.70, leakage_per_cell: 0.30, read_latency: 40.0}
+  - {name: mlc_t,     macro: true, symbols_per_cell: 1,   values_per_symbol: 3, bits_per_cell: 1.585,
+     area_per_cell: 0.80, read_energy_per_cell: 0.80, write_energy_per_cell: 1.10, leakage_per_cell: 0.35, read_latency: 55.0}
+  - {name: sram_q_1b, macro: true, cells_per_symbol: 2, values_per_symbol: 4, bits_per_cell: 1.0,
+     area_per_cell: 0.60, read_energy_per_cell: 0.50, write_energy_per_cell: 0.70, leakage_per_cell: 0.30, read_latency: 40.0}
+  - {name: mlc_q_2b,  macro: true, symbols_per_cell: 1,   values_per_symbol: 4, bits_per_cell: 2.0,
+     area_per_cell: 0.95, read_energy_per_cell: 1.00, write_energy_per_cell: 1.40, leakage_per_cell: 0.40, read_latency: 70.0}

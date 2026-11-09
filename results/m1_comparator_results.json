@@ -1,0 +1,274 @@
+{
+  "experiment": "m1_comparator_and_sign_detect",
+  "date": "2026-11-09",
+  "seed": 42,
+  "n_vectors": 10000,
+  "sign_detect": [
+    {
+      "iso_pair": "8b_vs_6t",
+      "n_bits": 8,
+      "n_trits": 6,
+      "effective_bits_t": 9.51,
+      "binary": {
+        "arch": "scan",
+        "summary": {
+          "cells": 7,
+          "transistors": 28.0,
+          "area_um2": 2.8,
+          "leakage_nw": 14.0,
+          "delay_ps": 34.0,
+          "levels": 3
+        },
+        "dyn_energy_fj": 1.3977600000000001
+      },
+      "ternary_variants": [
+        {
+          "arch": "chain",
+          "summary": {
+            "cells": 5,
+            "transistors": 70.0,
+            "area_um2": 7.000000000000001,
+            "leakage_nw": 35.0,
+            "delay_ps": 110.0,
+            "levels": 5
+          },
+          "dyn_energy_fj": 7.4062800000000015
+        },
+        {
+          "arch": "tree",
+          "summary": {
+            "cells": 5,
+            "transistors": 70.0,
+            "area_um2": 7.000000000000001,
+            "leakage_nw": 35.0,
+            "delay_ps": 66.0,
+            "levels": 3
+          },
+          "dyn_energy_fj": 8.002120000000001
+        }
+      ],
+      "best_ternary": "tree",
+      "relative_savings": {
+        "delay_primary": -0.9411764705882353,
+        "transistors": -1.5,
+        "energy": -4.724959935897436
+      },
+      "nominal_verdict": "REFUTED"
+    },
+    {
+      "iso_pair": "16b_vs_11t",
+      "n_bits": 16,
+      "n_trits": 11,
+      "effective_bits_t": 17.43,
+      "binary": {
+        "arch": "scan",
+        "summary": {
+          "cells": 16,
+          "transistors": 62.0,
+          "area_um2": 6.2,
+          "leakage_nw": 31.0,
+          "delay_ps": 49.0,
+          "levels": 5
+        },
+        "dyn_energy_fj": 2.80756
+      },
+      "ternary_variants": [
+        {
+          "arch": "chain",
+          "summary": {
+            "cells": 10,
+            "transistors": 140.0,
+            "area_um2": 14.000000000000002,
+            "leakage_nw": 70.0,
+            "delay_ps": 220.0,
+            "levels": 10
+          },
+          "dyn_energy_fj": 14.36904
+        },
+        {
+          "arch": "tree",
+          "summary": {
+            "cells": 10,
+            "transistors": 140.0,
+            "area_um2": 14.000000000000002,
+            "leakage_nw": 70.0,
+            "delay_ps": 88.0,
+            "levels": 4
+          },
+          "dyn_energy_fj": 15.48792
+        }
+      ],
+      "best_ternary": "tree",
+      "relative_savings": {
+        "delay_primary": -0.7959183673469388,
+        "transistors": -1.2580645161290325,
+        "energy": -4.516505435324624
+      },
+      "nominal_verdict": "REFUTED"
+    },
+    {
+      "iso_pair": "32b_vs_21t",
+      "n_bits": 32,
+      "n_trits": 21,
+      "effective_bits_t": 33.28,
+      "binary": {
+        "arch": "scan",
+        "summary": {
+          "cells": 31,
+          "transistors": 124.0,
+          "area_um2": 12.4,
+          "leakage_nw": 62.0,
+          "delay_ps": 56.0,
+          "levels": 5
+        },
+        "dyn_energy_fj": 5.616320000000001
+      },
+      "ternary_variants": [
+        {
+          "arch": "chain",
+          "summary": {
+            "cells": 20,
+            "transistors": 280.0,
+            "area_um2": 28.000000000000004,
+            "leakage_nw": 140.0,
+            "delay_ps": 440.0,
+            "levels": 20
+          },
+          "dyn_energy_fj": 28.442680000000006
+        },
+        {
+          "arch": "tree",
+          "summary": {
+            "cells": 20,
+            "transistors": 280.0,
+            "area_um2": 28.000000000000004,
+            "leakage_nw": 140.0,
+            "delay_ps": 110.0,
+            "levels": 5
+          },
+          "dyn_energy_fj": 30.821
+        }
+      ],
+      "best_ternary": "tree",
+      "relative_savings": {
+        "delay_primary": -0.9642857142857142,
+        "transistors": -1.2580645161290325,
+        "energy": -4.487757107857101
+      },
+      "nominal_verdict": "REFUTED"
+    }
+  ],
+  "comparator": [
+    {
+      "iso_pair": "8b_vs_6t",
+      "n_bits": 8,
+      "n_trits": 6,
+      "best_binary": "tree",
+      "best_ternary": "tree",
+      "binary_metrics": {
+        "arch": "tree",
+        "summary": {
+          "cells": 53,
+          "transistors": 286.0,
+          "area_um2": 28.600000000000005,
+          "leakage_nw": 143.0,
+          "delay_ps": 121.0,
+          "levels": 8
+        },
+        "dyn_energy_fj": 22.692000000000004
+      },
+      "ternary_metrics": {
+        "arch": "tree",
+        "summary": {
+          "cells": 11,
+          "transistors": 190.0,
+          "area_um2": 19.0,
+          "leakage_nw": 95.0,
+          "delay_ps": 96.0,
+          "levels": 4
+        },
+        "dyn_energy_fj": 21.87028
+      },
+      "relative_savings": {
+        "delay_primary": 0.20661157024793386,
+        "transistors": 0.3356643356643356,
+        "energy": 0.03621188083906235
+      },
+      "nominal_verdict": "SUPPORTED"
+    },
+    {
+      "iso_pair": "16b_vs_11t",
+      "n_bits": 16,
+      "n_trits": 11,
+      "best_binary": "tree",
+      "best_ternary": "tree",
+      "binary_metrics": {
+        "arch": "tree",
+        "summary": {
+          "cells": 109,
+          "transistors": 590.0,
+          "area_um2": 59.00000000000001,
+          "leakage_nw": 295.0,
+          "delay_ps": 153.0,
+          "levels": 10
+        },
+        "dyn_energy_fj": 45.84064000000001
+      },
+      "ternary_metrics": {
+        "arch": "tree",
+        "summary": {
+          "cells": 21,
+          "transistors": 360.0,
+          "area_um2": 36.0,
+          "leakage_nw": 180.0,
+          "delay_ps": 118.0,
+          "levels": 5
+        },
+        "dyn_energy_fj": 43.1768
+      },
+      "relative_savings": {
+        "delay_primary": 0.2287581699346405,
+        "transistors": 0.38983050847457623,
+        "energy": 0.05811088152346933
+      },
+      "nominal_verdict": "SUPPORTED"
+    },
+    {
+      "iso_pair": "32b_vs_21t",
+      "n_bits": 32,
+      "n_trits": 21,
+      "best_binary": "tree",
+      "best_ternary": "tree",
+      "binary_metrics": {
+        "arch": "tree",
+        "summary": {
+          "cells": 221,
+          "transistors": 1198.0,
+          "area_um2": 119.80000000000001,
+          "leakage_nw": 599.0,
+          "delay_ps": 185.0,
+          "levels": 12
+        },
+        "dyn_energy_fj": 92.21816000000001
+      },
+      "ternary_metrics": {
+        "arch": "tree",
+        "summary": {
+          "cells": 41,
+          "transistors": 700.0,
+          "area_um2": 70.0,
+          "leakage_nw": 350.0,
+          "delay_ps": 140.0,
+          "levels": 6
+        },
+        "dyn_energy_fj": 85.06252
+      },
+      "relative_savings": {
+        "delay_primary": 0.2432432432432432,
+        "transistors": 0.41569282136894825,
+        "energy": 0.07759469501451777
+      },
+      "nominal_verdict": "SUPPORTED"
+    }
+  ]
+}
