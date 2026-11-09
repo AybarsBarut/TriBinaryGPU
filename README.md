@@ -1,6 +1,6 @@
 # TriBinary: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
 
-[![CI](https://github.com/tribinary/tribinary/actions/workflows/ci.yml/badge.svg)](https://github.com/tribinary/tribinary/actions/workflows/ci.yml)
+[![CI](https://github.com/AybarsBarut/TriBinaryGPU/actions/workflows/ci.yml/badge.svg)](https://github.com/AybarsBarut/TriBinaryGPU/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](pyproject.toml)
 
@@ -62,8 +62,8 @@ flowchart TD
 ### 2. Installation
 ```powershell
 # Clone repository
-git clone https://github.com/tribinary/tribinary.git
-cd tribinary
+git clone https://github.com/AybarsBarut/TriBinaryGPU.git
+cd TriBinaryGPU
 
 # Set up virtual environment
 python -m venv .venv

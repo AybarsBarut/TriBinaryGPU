@@ -1,12 +1,14 @@
 cff-version: 1.2.0
 message: "If you use TriBinary in your research, please cite it as below."
 authors:
+  - family-names: "Barut"
+    given-names: "Fahri Aybars"
   - family-names: "TriBinary Contributors"
     given-names: "Scientific Architecture Research Group"
 title: "TriBinary: Binary vs Multi-Valued Logic GPU Simulation Laboratory"
 version: 0.1.0
 date-released: 2026-11-09
-url: "https://github.com/tribinary/tribinary"
+url: "https://github.com/AybarsBarut/TriBinaryGPU"
 license: "Apache-2.0"
 keywords:
   - "computer-architecture"
