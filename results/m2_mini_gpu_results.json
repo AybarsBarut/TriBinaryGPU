@@ -1,0 +1,147 @@
+{
+  "experiment": "m2_mini_gpu_comparison",
+  "date": "2026-11-09",
+  "seed": 42,
+  "runs": [
+    {
+      "workload": "vec_add",
+      "n_lanes": 4,
+      "iso_pair": "8b_vs_6t",
+      "gpu_b": {
+        "system": "b",
+        "cycles": 5,
+        "clock_cycle_ps": 240.0,
+        "execution_time_ns": 1.2,
+        "alu_gate_area_um2": 657.6000000000001,
+        "alu_transistors": 6576.0,
+        "rf_area_um2": 307.2,
+        "total_energy_fj": 927.6000000000001,
+        "alu_energy_fj": 655.6000000000001,
+        "storage_energy_fj": 272.0
+      },
+      "gpu_t": {
+        "system": "t",
+        "cycles": 5,
+        "clock_cycle_ps": 275.0,
+        "execution_time_ns": 1.375,
+        "alu_gate_area_um2": 792.0000000000001,
+        "alu_transistors": 7920.0,
+        "rf_area_um2": 307.20000000000005,
+        "total_energy_fj": 942.4000000000001,
+        "alu_energy_fj": 618.4000000000001,
+        "storage_energy_fj": 324.00000000000006
+      },
+      "relative_savings": {
+        "execution_time_primary": -0.14583333333333348,
+        "energy": -0.01595515308322537,
+        "area": -0.1393034825870647
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "workload": "saxpy",
+      "n_lanes": 4,
+      "iso_pair": "8b_vs_6t",
+      "gpu_b": {
+        "system": "b",
+        "cycles": 7,
+        "clock_cycle_ps": 240.0,
+        "execution_time_ns": 1.68,
+        "alu_gate_area_um2": 657.6000000000001,
+        "alu_transistors": 6576.0,
+        "rf_area_um2": 307.2,
+        "total_energy_fj": 1344.4,
+        "alu_energy_fj": 963.6,
+        "storage_energy_fj": 380.79999999999995
+      },
+      "gpu_t": {
+        "system": "t",
+        "cycles": 7,
+        "clock_cycle_ps": 275.0,
+        "execution_time_ns": 1.925,
+        "alu_gate_area_um2": 792.0000000000001,
+        "alu_transistors": 7920.0,
+        "rf_area_um2": 307.20000000000005,
+        "total_energy_fj": 1364.4000000000003,
+        "alu_energy_fj": 910.8000000000002,
+        "storage_energy_fj": 453.6000000000001
+      },
+      "relative_savings": {
+        "execution_time_primary": -0.14583333333333348,
+        "energy": -0.014876524843796757,
+        "area": -0.1393034825870647
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "workload": "vec_add",
+      "n_lanes": 8,
+      "iso_pair": "16b_vs_11t",
+      "gpu_b": {
+        "system": "b",
+        "cycles": 5,
+        "clock_cycle_ps": 400.0,
+        "execution_time_ns": 2.0,
+        "alu_gate_area_um2": 4355.200000000001,
+        "alu_transistors": 43552.0,
+        "rf_area_um2": 1228.8,
+        "total_energy_fj": 5418.8,
+        "alu_energy_fj": 4330.8,
+        "storage_energy_fj": 1088.0
+      },
+      "gpu_t": {
+        "system": "t",
+        "cycles": 5,
+        "clock_cycle_ps": 425.0,
+        "execution_time_ns": 2.125,
+        "alu_gate_area_um2": 4664.000000000001,
+        "alu_transistors": 46640.0,
+        "rf_area_um2": 1126.4,
+        "total_energy_fj": 3315.6000000000004,
+        "alu_energy_fj": 2127.6000000000004,
+        "storage_energy_fj": 1188.0
+      },
+      "relative_savings": {
+        "execution_time_primary": -0.0625,
+        "energy": 0.3881302133313649,
+        "area": -0.03696275071633237
+      },
+      "verdict": "REFUTED"
+    },
+    {
+      "workload": "saxpy",
+      "n_lanes": 8,
+      "iso_pair": "16b_vs_11t",
+      "gpu_b": {
+        "system": "b",
+        "cycles": 7,
+        "clock_cycle_ps": 400.0,
+        "execution_time_ns": 2.8,
+        "alu_gate_area_um2": 4355.200000000001,
+        "alu_transistors": 43552.0,
+        "rf_area_um2": 1228.8,
+        "total_energy_fj": 7910.0,
+        "alu_energy_fj": 6386.8,
+        "storage_energy_fj": 1523.1999999999998
+      },
+      "gpu_t": {
+        "system": "t",
+        "cycles": 7,
+        "clock_cycle_ps": 425.0,
+        "execution_time_ns": 2.975,
+        "alu_gate_area_um2": 4664.000000000001,
+        "alu_transistors": 46640.0,
+        "rf_area_um2": 1126.4,
+        "total_energy_fj": 3811.600000000001,
+        "alu_energy_fj": 2148.4000000000005,
+        "storage_energy_fj": 1663.2000000000003
+      },
+      "relative_savings": {
+        "execution_time_primary": -0.0625,
+        "energy": 0.5181289506953223,
+        "area": -0.03696275071633237
+      },
+      "verdict": "REFUTED"
+    }
+  ]
+}

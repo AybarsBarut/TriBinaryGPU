@@ -13,9 +13,9 @@ class NIMConfig:
     base_url: str = "https://integrate.api.nvidia.com/v1"
     default_model: str = "nvidia/nemotron-3-ultra-550b-a55b"
     fast_model: str = "deepseek-ai/deepseek-v4.1-flash"
-    timeout_sec: float = 60.0
-    max_retries: int = 3
-    retry_delay_sec: float = 2.0
+    timeout_sec: float = 20.0
+    max_retries: int = 2
+    retry_delay_sec: float = 1.0
     cache_dir: Optional[Path] = None
     enabled: bool = True
 

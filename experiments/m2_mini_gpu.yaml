@@ -1,0 +1,29 @@
+# RadixLab Experiment: M2 Single-SM Mini-GPU Comparison
+# Compares GPU-B and GPU-T on standard workloads (Vector Add, SAXPY)
+experiment_id: m2_mini_gpu_comparison
+hypothesis_id: H1_H2
+type: mini_gpu
+comparison_mode: iso-precision
+primary_metric: execution_time_ns
+delta_threshold: 0.10
+
+designs:
+  - GPU-B
+  - GPU-T
+
+configurations:
+  - lanes: 4
+    bits: 8
+    trits: 6
+    effective_bits_t: 9.51
+  - lanes: 8
+    bits: 16
+    trits: 11
+    effective_bits_t: 17.43
+
+workloads:
+  - vec_add
+  - saxpy
+
+outputs:
+  json: results/m2_mini_gpu_results.json

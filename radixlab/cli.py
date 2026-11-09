@@ -77,6 +77,23 @@ def cmd_run(args) -> int:
         return 1
 
     print(f"Running experiment from {exp_path}...")
+    if "m2" in exp_path.name:
+        from .micro.mini_gpu_compare import run_mini_gpu_experiment, save_mini_gpu_results
+        res = run_mini_gpu_experiment()
+        out = save_mini_gpu_results(res)
+        print(f"Results saved to {out}")
+
+        print("\n--- Single-SM Mini-GPU Execution Summary (GPU-B vs GPU-T) ---")
+        for item in res["runs"]:
+            wl = item["workload"]
+            p = item["iso_pair"]
+            lanes = item["n_lanes"]
+            r = item["relative_savings"]
+            t_b = item["gpu_b"]["execution_time_ns"]
+            t_t = item["gpu_t"]["execution_time_ns"]
+            print(f"[{wl:<8}] Lanes: {lanes} | {p:<12} | Time: GPU-B={t_b:5.2f}ns, GPU-T={t_t:5.2f}ns (r={r['execution_time_primary']*100:>5.1f}%) | Energy r={r['energy']*100:>5.1f}% | Area r={r['area']*100:>5.1f}% | Verdict: {item['verdict']}")
+        return 0
+
     res = run_comparator_micro_experiment()
     out = save_and_report_comparator_results(res)
     print(f"Results saved to {out}")
