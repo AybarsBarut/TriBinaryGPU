@@ -3,6 +3,8 @@ message: "If you use TriBinary in your research, please cite it as below."
 authors:
   - family-names: "Barut"
     given-names: "Fahri Aybars"
+    orcid: "https://orcid.org/0009-0008-9984-6124"
+    affiliation: "IQ Ar-Ge İnovasyon Danışmanlık Eğitim San. Tic. A.Ş."
   - family-names: "TriBinary Contributors"
     given-names: "Scientific Architecture Research Group"
 title: "TriBinary: Binary vs Multi-Valued Logic GPU Simulation Laboratory"

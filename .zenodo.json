@@ -3,7 +3,9 @@
   "description": "<p><b>TriBinary</b> is a reproducible, open-source scientific simulation laboratory and gate-level benchmark suite comparing binary, balanced-ternary, and quaternary GPU architectures under identical microarchitectural templates and physical silicon budget assumptions.</p><p>Key scientific findings:</p><ul><li><b>Pre-registered Hypotheses:</b> Locked under git tag <code>prereg-v1</code> with SHA-256 integrity verification.</li><li><b>H1 (Radix Economy):</b> Break-even cell-cost multiplier is c* ~ 1.585x.</li><li><b>H2 (Arithmetic):</b> Balanced ternary sign detection is 79-96% slower (refuted), while relational comparison is 20-24% faster (supported).</li><li><b>H2 & H5 (Effect Decomposition):</b> Multi-SM benchmarks isolate software encoding overhead (GPU-BT, +58% energy) from native ternary hardware gains (GPU-T, -42.6% GEMM dynamic energy).</li><li><b>H4 (Noise Immunity):</b> Demonstrates steep symbol error cliffs at sigma/V ~ 0.07 due to reduced voltage half-margins.</li></ul>",
   "creators": [
     {
-      "name": "Barut, Fahri Aybars"
+      "name": "Barut, Fahri Aybars",
+      "orcid": "0009-0008-9984-6124",
+      "affiliation": "IQ Ar-Ge İnovasyon Danışmanlık Eğitim San. Tic. A.Ş."
     },
     {
       "name": "TriBinary Contributors"
