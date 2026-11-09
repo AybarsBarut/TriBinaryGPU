@@ -1,6 +1,7 @@
 # TriBinary: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
 
-[![CI](https://github.com/AybarsBarut/TriBinaryGPU/actions/workflows/ci.yml/badge.svg)](https://github.com/AybarsBarut/TriBinaryGPU/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/tests-72%2F72%20passing-brightgreen.svg)](tests)
+[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](pyproject.toml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](pyproject.toml)
 
@@ -16,21 +17,21 @@ All findings are pre-registered and locked under git tag [`prereg-v1`](docs/hypo
 
 ```mermaid
 flowchart TD
-    subgraph Multi-SM GPU Architecture
+    subgraph MultiSM ["Multi-SM GPU Architecture"]
         GM["Global Memory (DRAM/HBM Macro)"] --> SM0["SM 0 (8 Lanes)"]
         GM --> SM1["SM 1 (8 Lanes)"]
         GM --> SM2["SM 2 (8 Lanes)"]
         GM --> SM3["SM 3 (8 Lanes)"]
     end
 
-    subgraph Streaming Multiprocessor (SM)
+    subgraph SM ["Streaming Multiprocessor (SM)"]
         Warp["SIMT Warp Sequencer & PC"] --> Dec["Instruction Decoder"]
         Dec --> RF["Register File Array (Macro: true)"]
         RF --> ALU["Gate-Level Netlist ALU Lanes (0..7)"]
         ALU --> SMEM["Shared Memory Scratchpad (Macro: true)"]
     end
 
-    subgraph Logic Systems Evaluated
+    subgraph Systems ["Logic Systems Evaluated"]
         GPUB["GPU-B: Binary Reference"]
         GPUT["GPU-T: Balanced Ternary {-1, 0, +1}"]
         GPUBT["GPU-BT: Control (Ternary Math on Binary Cells)"]

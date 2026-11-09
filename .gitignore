@@ -9,6 +9,7 @@ build/
 *.pyd
 *.so
 *.pdb
+*.zip
 .cache/
 # Never commit secrets
 .env
