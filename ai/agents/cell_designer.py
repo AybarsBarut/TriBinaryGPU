@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 from ..nim_client import NIMClient
-from radixlab.verify import VerificationGate
+from tribinary.verify import VerificationGate
 
 
 class CellDesignerAgent:

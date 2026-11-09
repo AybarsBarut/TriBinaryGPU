@@ -1,4 +1,4 @@
-# RadixLab Experiment: H4 Gaussian Noise Immunity & Error Rate Sweeps
+# TriBinary Experiment: H4 Gaussian Noise Immunity & Error Rate Sweeps
 experiment_id: h4_noise_sweep
 hypothesis_id: H4
 type: noise

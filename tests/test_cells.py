@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import pytest
 
-from radixlab import cells, golden
+from tribinary import cells, golden
 
 
 def test_load_all_libraries():

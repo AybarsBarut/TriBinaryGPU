@@ -1,4 +1,4 @@
-# RadixLab Experiment: M2 Single-SM Mini-GPU Comparison
+# TriBinary Experiment: M2 Single-SM Mini-GPU Comparison
 # Compares GPU-B and GPU-T on standard workloads (Vector Add, SAXPY)
 experiment_id: m2_mini_gpu_comparison
 hypothesis_id: H1_H2

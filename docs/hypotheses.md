@@ -1,4 +1,4 @@
-# RadixLab — Pre-registered Hypotheses
+# TriBinary — Pre-registered Hypotheses
 
 Status: **frozen as `prereg-v1`** (2026-11-09, after M0 approval). Any later change follows §0.8.
 

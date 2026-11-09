@@ -1,9 +1,9 @@
 [package]
-name = "radixlab-core"
+name = "tribinary-core"
 version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
-description = "RadixLab gate-level multi-valued logic simulator core"
+description = "TriBinary gate-level multi-valued logic simulator core"
 
 [lib]
 name = "_core"

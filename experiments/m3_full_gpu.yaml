@@ -1,4 +1,4 @@
-# RadixLab Experiment: M3 Full Multi-SM GPU Benchmarking (32 Lanes, 4 SMs)
+# TriBinary Experiment: M3 Full Multi-SM GPU Benchmarking (32 Lanes, 4 SMs)
 # Covers all 5 designs with full effect decomposition
 experiment_id: m3_full_gpu_benchmarking
 type: full_gpu

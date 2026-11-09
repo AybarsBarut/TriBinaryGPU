@@ -12,7 +12,7 @@ import httpx
 
 from .config import NIMConfig, get_nvidia_api_key
 
-logger = logging.getLogger("radixlab.ai")
+logger = logging.getLogger("tribinary.ai")
 
 
 class NIMClient:

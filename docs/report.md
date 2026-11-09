@@ -1,4 +1,4 @@
-# RadixLab — Automated Scientific Simulation Report
+# TriBinary — Automated Scientific Simulation Report
 
 > **Rule Enforced:** All numerical results are injected by template from deterministic and verified gate-level simulations.
 

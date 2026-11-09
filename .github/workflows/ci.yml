@@ -1,4 +1,4 @@
-name: RadixLab CI
+name: TriBinary CI
 
 on:
   push:
@@ -48,9 +48,9 @@ jobs:
 
       - name: Run Verification Gate & Experiments
         run: |
-          radixlab verify --suite m1
-          radixlab run experiments/m1_comparator.yaml
-          radixlab run experiments/m2_mini_gpu.yaml
-          radixlab run experiments/m3_full_gpu.yaml
-          radixlab run experiments/h4_noise.yaml
-          radixlab report
+          tribinary verify --suite m1
+          tribinary run experiments/m1_comparator.yaml
+          tribinary run experiments/m2_mini_gpu.yaml
+          tribinary run experiments/m3_full_gpu.yaml
+          tribinary run experiments/h4_noise.yaml
+          tribinary report

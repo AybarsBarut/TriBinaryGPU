@@ -1,6 +1,6 @@
 """Generate cells/{binary,ternary,quaternary}.yaml.
 
-The truth tables are generated from the golden registry (radixlab/golden.py) and committed in the YAML;
+The truth tables are generated from the golden registry (tribinary/golden.py) and committed in the YAML;
 the L0 verification test (tests/test_cells.py) compares the committed tables with the golden functions
 again and with independent arithmetic identities, so manual edits that break a table are caught.
 All numeric hardware parameters below are PLACEHOLDER assumptions; see docs/assumptions.md.
@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from radixlab import golden  # noqa: E402
+from tribinary import golden  # noqa: E402
 
 # name: (description, inputs, outputs, transistors, delay_stages, sequential, extra)
 BINARY = [

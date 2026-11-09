@@ -14,7 +14,7 @@ reporting.
   produce silently wrong simulation results. Parallel evaluation (rayon) is data-race-free by construction.
 - **Performance.** Levelized evaluation with bit-parallel packing and event-driven simulation are
   tight-loop, cache-sensitive workloads where Rust and C++ perform equally well.
-- **Distribution.** `pip install radixlab` needs prebuilt wheels. maturin plus `cibuildwheel`-style CI gives
+- **Distribution.** `pip install tribinary` needs prebuilt wheels. maturin plus `cibuildwheel`-style CI gives
   Linux, macOS and Windows wheels with less build-system friction than CMake with pybind11 and nanobind.
 - **Testing.** `cargo test` and property-based tests (`proptest`) fit equivalence checking.
 - **Local toolchain.** Rust 1.97, Cargo and Python 3.12 are available on the development machine.

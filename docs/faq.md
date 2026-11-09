@@ -1,4 +1,4 @@
-# RadixLab — FAQ
+# TriBinary — FAQ
 
 ## Is RGB a "three-valued" system? Does it relate to ternary logic?
 

@@ -1,4 +1,4 @@
-# RadixLab: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
+# TriBinary: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
 FROM python:3.12-slim
 
 # Install system dependencies including Rust toolchain
@@ -18,7 +18,7 @@ WORKDIR /workspace
 # Copy dependencies first for caching
 COPY pyproject.toml /workspace/
 COPY core/ /workspace/core/
-COPY radixlab/ /workspace/radixlab/
+COPY tribinary/ /workspace/tribinary/
 COPY cells/ /workspace/cells/
 COPY experiments/ /workspace/experiments/
 COPY workloads/ /workspace/workloads/
@@ -33,4 +33,4 @@ RUN pip install --no-cache-dir --upgrade pip maturin pytest numpy scipy pyyaml h
     && maturin develop --release
 
 # Run verification and experiments by default
-CMD ["sh", "-c", "radixlab verify --suite m1 && radixlab run experiments/m3_full_gpu.yaml && radixlab report && cat docs/report.md"]
+CMD ["sh", "-c", "tribinary verify --suite m1 && tribinary run experiments/m3_full_gpu.yaml && tribinary report && cat docs/report.md"]

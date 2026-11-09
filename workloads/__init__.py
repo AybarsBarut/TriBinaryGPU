@@ -1,4 +1,4 @@
-"""Standard Workload Suite for RadixLab GPU benchmarking (Section 6)."""
+"""Standard Workload Suite for TriBinary GPU benchmarking (Section 6)."""
 from .bitnet_mlp import BITNET_TERNARY_ASM, generate_bitnet_data
 from .circle_sdf import CIRCLE_SDF_ASM, generate_circle_data
 from .conv2d import CONV2D_ASM, generate_conv2d_data

@@ -4,11 +4,11 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from radixlab import cells
-from radixlab.gen.adders import build_adder
-from radixlab.gen.comparators import build_sign_detect
-from radixlab.gen.multipliers import build_multiplier
-from radixlab.reference import ReferenceEvaluator
+from tribinary import cells
+from tribinary.gen.adders import build_adder
+from tribinary.gen.comparators import build_sign_detect
+from tribinary.gen.multipliers import build_multiplier
+from tribinary.reference import ReferenceEvaluator
 
 
 @pytest.fixture(scope="module")

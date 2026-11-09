@@ -4,7 +4,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from radixlab.gpu.kernel import GPUKernelRunner
+from tribinary.gpu.kernel import GPUKernelRunner
 from workloads.saxpy import SAXPY_ASM, generate_saxpy_data
 from workloads.vec_add import VEC_ADD_ASM, generate_vec_add_data
 

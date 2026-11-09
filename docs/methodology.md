@@ -1,10 +1,10 @@
-# RadixLab — Methodology
+# TriBinary — Methodology
 
 Status: **M0 draft, awaiting approval.** Companion to `hypotheses.md` and `assumptions.md`.
 
 ## 1. Scope and non-claims
 
-RadixLab is a **gate-level architectural simulation study**. It does not predict the performance of real
+TriBinary is a **gate-level architectural simulation study**. It does not predict the performance of real
 silicon. The hardware parameters are assumptions, and conclusions are valid only inside the assumption
 ranges stated in each report. The study cannot say that ternary or quaternary chips are, or are not,
 manufacturable. It can say under which cost assumptions an architectural advantage exists or vanishes.
@@ -162,7 +162,7 @@ are listed in the report and never silently dropped.
 
 ## 10. Reporting and the AI text rule
 
-- `radixlab report` produces `report.md` from result files with a template engine. Every number appears via a
+- `tribinary report` produces `report.md` from result files with a template engine. Every number appears via a
   reference to a field in a result file.
 - **AI-written text never contains typed numbers.** The AI layer receives result fields and writes prose with
   placeholders (`{{h2.add.energy_ratio}}`). A validator rejects a draft that contains a numeric literal not

@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import pytest
 
-from radixlab.sensitivity import SensitivityAnalyzer
+from tribinary.sensitivity import SensitivityAnalyzer
 
 
 def test_tornado_analysis():

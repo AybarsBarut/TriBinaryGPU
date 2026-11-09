@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import pytest
 
-from radixlab.gpu.device import Device
+from tribinary.gpu.device import Device
 from workloads.vec_add import VEC_ADD_ASM
 
 

@@ -1,6 +1,6 @@
-# Contributing to RadixLab
+# Contributing to TriBinary
 
-Thank you for your interest in contributing to RadixLab. This repository is dedicated to **reproducible, unvarnished scientific simulation** of multi-valued logic architectures.
+Thank you for your interest in contributing to TriBinary. This repository is dedicated to **reproducible, unvarnished scientific simulation** of multi-valued logic architectures.
 
 ## Core Rules of Engagement
 
@@ -15,7 +15,7 @@ Thank you for your interest in contributing to RadixLab. This repository is dedi
 
 1. Create or edit `cells/<library_name>.yaml`.
 2. Follow the assumption schema specified in `docs/assumptions.md`.
-3. Add the corresponding golden truth table function in `radixlab/golden.py`.
+3. Add the corresponding golden truth table function in `tribinary/golden.py`.
 4. Run `pytest tests/test_cells.py` to ensure truth table integrity (L0).
 
 ---
@@ -27,7 +27,7 @@ Thank you for your interest in contributing to RadixLab. This repository is dedi
    - The unified assembly kernel text (`*_ASM`).
    - A golden reference evaluation function (`generate_*_data`).
 3. Add a parity test in `tests/test_workloads_m3.py`.
-4. Include the workload in `experiments/m3_full_gpu.yaml` and re-run `radixlab run experiments/m3_full_gpu.yaml`.
+4. Include the workload in `experiments/m3_full_gpu.yaml` and re-run `tribinary run experiments/m3_full_gpu.yaml`.
 
 ---
 

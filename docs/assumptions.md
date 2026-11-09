@@ -1,9 +1,9 @@
-# RadixLab — Assumption Schema
+# TriBinary — Assumption Schema
 
 Status: **M0 draft, awaiting approval.** The machine-readable JSON Schema is written in M1 from this
 specification and enforced by the loader and in CI.
 
-**Every hardware parameter is an assumption.** Nothing in RadixLab is a measurement of real silicon unless
+**Every hardware parameter is an assumption.** Nothing in TriBinary is a measurement of real silicon unless
 a field says so. Each parameter carries a source note and a confidence level. Results are reported with
 sensitivity analysis over ±50%.
 
@@ -148,7 +148,7 @@ be quoted. Real values are sourced in M1.
 
 ## 7. Where assumptions are shown
 
-- The `radixlab assumptions` command prints every parameter with confidence and group.
+- The `tribinary assumptions` command prints every parameter with confidence and group.
 - Each report has an assumptions table and lists which conclusions depend on `low` confidence values.
 - This file defines the format. The current values are the YAML files in `cells/` and are not duplicated
   here.

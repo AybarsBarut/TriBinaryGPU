@@ -4,7 +4,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from radixlab.gpu.kernel import GPUKernelRunner
+from tribinary.gpu.kernel import GPUKernelRunner
 from workloads import (
     BITNET_TERNARY_ASM,
     CIRCLE_SDF_ASM,

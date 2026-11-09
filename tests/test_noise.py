@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import pytest
 
-from radixlab.noise import analytical_symbol_error_rate, inject_noise, q_function, run_noise_sweep
+from tribinary.noise import analytical_symbol_error_rate, inject_noise, q_function, run_noise_sweep
 
 
 def test_q_function():

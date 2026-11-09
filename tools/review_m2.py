@@ -6,7 +6,7 @@ from pathlib import Path
 
 from ai.agents.red_team import RedTeamAgent
 from ai.nim_client import NIMClient
-from radixlab.paths import results_dir
+from tribinary.paths import results_dir
 
 res_file = results_dir() / "m2_mini_gpu_results.json"
 if not res_file.exists():

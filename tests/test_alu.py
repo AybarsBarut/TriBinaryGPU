@@ -3,9 +3,9 @@ from __future__ import annotations
 
 import pytest
 
-from radixlab import cells
-from radixlab.gen.alu import build_alu
-from radixlab.verify import VerificationGate
+from tribinary import cells
+from tribinary.gen.alu import build_alu
+from tribinary.verify import VerificationGate
 
 
 @pytest.fixture(scope="module")

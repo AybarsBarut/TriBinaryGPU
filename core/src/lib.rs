@@ -1,4 +1,4 @@
-//! RadixLab simulator core: levelized bit-parallel evaluation, static timing,
+//! TriBinary simulator core: levelized bit-parallel evaluation, static timing,
 //! event-driven timed simulation and sequential stepping for multi-valued logic.
 //!
 //! Host encoding (see docs/methodology.md section 5):

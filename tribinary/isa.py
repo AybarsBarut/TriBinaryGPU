@@ -1,4 +1,4 @@
-"""Unified ISA definition and assembler for RadixLab GPU architectures.
+"""Unified ISA definition and assembler for TriBinary GPU architectures.
 
 Unified instruction set supported across all radices:
   Arithmetic:

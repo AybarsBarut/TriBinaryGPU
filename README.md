@@ -1,10 +1,10 @@
-# RadixLab: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
+# TriBinary: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
 
-[![CI](https://github.com/radixlab/radixlab/actions/workflows/ci.yml/badge.svg)](https://github.com/radixlab/radixlab/actions/workflows/ci.yml)
+[![CI](https://github.com/tribinary/tribinary/actions/workflows/ci.yml/badge.svg)](https://github.com/tribinary/tribinary/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](pyproject.toml)
 
-RadixLab is a reproducible, open-source scientific simulation laboratory and gate-level benchmark suite designed to answer a fundamental computer architecture research question:
+TriBinary is a reproducible, open-source scientific simulation laboratory and gate-level benchmark suite designed to answer a fundamental computer architecture research question:
 
 > **Research Question:** Under identical microarchitectural templates and physical silicon budget assumptions, how do binary, balanced-ternary, and quaternary GPU architectures compare in speed, dynamic energy, silicon area, and noise resilience across diverse compute workloads?
 
@@ -62,8 +62,8 @@ flowchart TD
 ### 2. Installation
 ```powershell
 # Clone repository
-git clone https://github.com/radixlab/radixlab.git
-cd radixlab
+git clone https://github.com/tribinary/tribinary.git
+cd tribinary
 
 # Set up virtual environment
 python -m venv .venv
@@ -76,24 +76,24 @@ maturin develop --release
 
 ### 3. Verify Gate-Level Netlists & Equivalence
 ```powershell
-radixlab verify --suite m1
+tribinary verify --suite m1
 ```
 
 ### 4. Run Multi-SM GPU Experiments
 ```powershell
 # Run 32-lane multi-SM benchmark across all 5 designs
-radixlab run experiments/m3_full_gpu.yaml
+tribinary run experiments/m3_full_gpu.yaml
 
 # Run noise sensitivity sweep
-radixlab run experiments/h4_noise.yaml
+tribinary run experiments/h4_noise.yaml
 
 # Run parameter sensitivity analysis (1024 Monte Carlo samples)
-radixlab run experiments/h1_sensitivity.yaml
+tribinary run experiments/h1_sensitivity.yaml
 ```
 
 ### 5. Generate Automated Report
 ```powershell
-radixlab report
+tribinary report
 # View report in docs/report.md
 ```
 
@@ -101,7 +101,7 @@ radixlab report
 
 ## NVIDIA NIM AI Integration
 
-RadixLab integrates with NVIDIA AI Foundation endpoints (`build.nvidia.com`) via `ai/nim_client.py`:
+TriBinary integrates with NVIDIA AI Foundation endpoints (`build.nvidia.com`) via `ai/nim_client.py`:
 - **Red Team Auditor (`ai/agents/red_team.py`):** Uses `nvidia/nemotron-3-ultra-550b-a55b` to audit assumptions for bias.
 - **Report Drafter (`ai/agents/report_drafter.py`):** Drafts report narratives enforcing the zero-hallucinated-number template rule.
 - **Cell Designer (`ai/agents/cell_designer.py`):** Drafts candidate gate netlists with mandatory quarantine and verification gates.
@@ -109,7 +109,7 @@ RadixLab integrates with NVIDIA AI Foundation endpoints (`build.nvidia.com`) via
 To run the Red Team agent:
 ```powershell
 $env:NVIDIA_API_KEY="nvapi-..."
-radixlab review
+tribinary review
 ```
 
 ---

@@ -30,7 +30,7 @@ def generate_markdown_report(
     runs = m3_data.get("runs", [])
 
     lines = []
-    lines.append("# RadixLab — Automated Scientific Simulation Report")
+    lines.append("# TriBinary — Automated Scientific Simulation Report")
     lines.append("")
     lines.append("> **Rule Enforced:** All numerical results are injected by template from deterministic and verified gate-level simulations.")
     lines.append("")

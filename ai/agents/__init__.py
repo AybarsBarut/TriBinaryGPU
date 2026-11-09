@@ -1,1 +1,1 @@
-"""AI Agents powered by NVIDIA NIM for RadixLab."""
+"""AI Agents powered by NVIDIA NIM for TriBinary."""

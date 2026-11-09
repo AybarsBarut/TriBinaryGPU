@@ -1,4 +1,4 @@
-"""RadixLab Command-Line Interface (CLI)."""
+"""TriBinary Command-Line Interface (CLI)."""
 from __future__ import annotations
 
 import argparse
@@ -23,7 +23,7 @@ def cmd_verify(args) -> int:
     gate = VerificationGate()
     libs = cells.load_all()
     print("=" * 60)
-    print("RadixLab Verification Gate (L0 Cells & L1 Blocks)")
+    print("TriBinary Verification Gate (L0 Cells & L1 Blocks)")
     print("=" * 60)
 
     # L0
@@ -135,7 +135,7 @@ def cmd_run(args) -> int:
 def cmd_assumptions(args) -> int:
     libs = cells.load_all()
     print("=" * 80)
-    print("RadixLab Assumption Catalog (docs/assumptions.md)")
+    print("TriBinary Assumption Catalog (docs/assumptions.md)")
     print("=" * 80)
     for lib_name, lib in libs.items():
         print(f"\nLibrary: {lib_name.upper()} (Status: {lib.status})")
@@ -159,7 +159,7 @@ def cmd_review(args) -> int:
     agent = RedTeamAgent(client)
     res_path = results_dir() / "m1_comparator_results.json"
     if not res_path.exists():
-        print("Run 'radixlab run experiments/m1_comparator.yaml' first.")
+        print("Run 'tribinary run experiments/m1_comparator.yaml' first.")
         return 1
 
     critique = agent.review_experiment_results("M1 Comparator & Sign Detection", res_path.read_text(encoding="utf-8"))
@@ -176,7 +176,7 @@ def cmd_report(args) -> int:
 
 
 def main():
-    parser = argparse.ArgumentParser(prog="radixlab", description="RadixLab CLI")
+    parser = argparse.ArgumentParser(prog="tribinary", description="TriBinary CLI")
     sub = parser.add_subparsers(dest="subcommand", required=True)
 
     p_v = sub.add_parser("verify", help="Run verification gate suite")

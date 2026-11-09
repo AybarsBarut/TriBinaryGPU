@@ -6,14 +6,14 @@ from pathlib import Path
 
 
 def repo_root() -> Path:
-    env = os.environ.get("RADIXLAB_ROOT")
+    env = os.environ.get("TRIBINARY_ROOT")
     if env:
         return Path(env)
     return Path(__file__).resolve().parent.parent
 
 
 def cells_dir() -> Path:
-    env = os.environ.get("RADIXLAB_CELLS")
+    env = os.environ.get("TRIBINARY_CELLS")
     if env:
         return Path(env)
     return repo_root() / "cells"
