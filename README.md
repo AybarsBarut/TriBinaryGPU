@@ -1,5 +1,6 @@
 # TriBinary: Binary vs Ternary/Quaternary Logic GPU Simulation Laboratory
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24079983.svg)](https://doi.org/10.5281/zenodo.24079983)
 [![Tests](https://img.shields.io/badge/tests-72%2F72%20passing-brightgreen.svg)](tests)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](pyproject.toml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)

@@ -9,6 +9,7 @@ authors:
     given-names: "Scientific Architecture Research Group"
 title: "TriBinary: Binary vs Multi-Valued Logic GPU Simulation Laboratory"
 version: 0.1.0
+doi: "10.5281/zenodo.24079983"
 date-released: 2026-11-09
 url: "https://github.com/AybarsBarut/TriBinaryGPU"
 license: "Apache-2.0"
