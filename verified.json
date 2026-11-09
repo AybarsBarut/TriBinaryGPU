@@ -5,8 +5,8 @@
     "method": "exhaustive",
     "n_vectors": 512,
     "passed": true,
-    "timestamp": 1794214256.552476,
-    "duration_ms": 3.467999995336868
+    "timestamp": 1794215415.5939486,
+    "duration_ms": 9.517200000118464
   },
   "d69e9334fdda8f17c5d33db018ec91bb2141a84718df1f63ded871f67a1c83bd": {
     "block_name": "adder_q3_ripple",
@@ -14,8 +14,8 @@
     "method": "exhaustive",
     "n_vectors": 8192,
     "passed": true,
-    "timestamp": 1794214256.597471,
-    "duration_ms": 30.120700001134537
+    "timestamp": 1794215415.708243,
+    "duration_ms": 78.79650000541005
   },
   "239e6de19088a8308dbf6e42b81cb71b49592880ca13c201506c50cc89e65daf": {
     "block_name": "adder_b8_ripple",
@@ -23,8 +23,8 @@
     "method": "random+corners",
     "n_vectors": 2120,
     "passed": true,
-    "timestamp": 1794214256.622914,
-    "duration_ms": 25.06580000044778
+    "timestamp": 1794215415.7519763,
+    "duration_ms": 40.45400000177324
   },
   "0ac135274618ef02840ddadeebb1be4781f51f810398f81202c4473273b603c4": {
     "block_name": "adder_q6_ripple",
@@ -32,8 +32,8 @@
     "method": "random+corners",
     "n_vectors": 2120,
     "passed": true,
-    "timestamp": 1794214256.6576238,
-    "duration_ms": 12.634599988814443
+    "timestamp": 1794215415.8387253,
+    "duration_ms": 32.350099994800985
   },
   "e48b52629b426f2fe86b77d51f644b7d640d623b531777533de0bc900e8a8f21": {
     "block_name": "adder_b8_csel:4",
@@ -41,8 +41,8 @@
     "method": "random+corners",
     "n_vectors": 2120,
     "passed": true,
-    "timestamp": 1794214256.661227,
-    "duration_ms": 1.0220999974990264
+    "timestamp": 1794215415.846351,
+    "duration_ms": 2.079999991110526
   },
   "1cbcbc88868ea0eb58b05e25d2f5d930054be1da54640b390c32291f812fb4a8": {
     "block_name": "adder_q6_csel:2",
@@ -50,8 +50,8 @@
     "method": "random+corners",
     "n_vectors": 2120,
     "passed": true,
-    "timestamp": 1794214256.6657488,
-    "duration_ms": 0.8080999978119507
+    "timestamp": 1794215415.859487,
+    "duration_ms": 2.2698999964632094
   },
   "c3da8df513334ff9ddd5b286a6845aea40ac2d060cbeedb9c78d6bb764de929b": {
     "block_name": "signdet_b4_scan",
@@ -59,8 +59,8 @@
     "method": "exhaustive",
     "n_vectors": 16,
     "passed": true,
-    "timestamp": 1794214256.7515166,
-    "duration_ms": 0.31960000342223793
+    "timestamp": 1794215416.127359,
+    "duration_ms": 0.5544000014197081
   },
   "b79eae1244b40508e2a74791dd34e1dda98dd74432e9f29405b74c4c5f556d93": {
     "block_name": "signdet_b8_scan",
@@ -68,8 +68,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214256.7586062,
-    "duration_ms": 1.519799989182502
+    "timestamp": 1794215416.146642,
+    "duration_ms": 3.8195000088308007
   },
   "5f13918d098696a5af1bd4c943e4805491313f1b8aacee3dcd72ecec9b491194": {
     "block_name": "cmp_b4_tree",
@@ -77,8 +77,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214256.7661145,
-    "duration_ms": 0.27970000519417226
+    "timestamp": 1794215416.1662087,
+    "duration_ms": 0.8368999988306314
   },
   "b66594673629bb0902cd5a460443c9822ac6cd0a874b016e78c0b95dcfb9865b": {
     "block_name": "cmp_b4_sub:ripple",
@@ -86,8 +86,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214256.7672765,
-    "duration_ms": 0.24140000459738076
+    "timestamp": 1794215416.1706035,
+    "duration_ms": 0.621799990767613
   },
   "ec49bf13d3a91564ca4afaceb10b8349188ea21cf5bdca2855d3f314445eaa8b": {
     "block_name": "cmp_b8_tree",
@@ -95,8 +95,8 @@
     "method": "random+corners",
     "n_vectors": 2097,
     "passed": true,
-    "timestamp": 1794214256.7733228,
-    "duration_ms": 0.8793000015430152
+    "timestamp": 1794215416.1864607,
+    "duration_ms": 1.8348000012338161
   },
   "79f6bfad9aef3e24fb5e6ed3d1b9ecd7475e92549111130a4004232911231ade": {
     "block_name": "mul_b4_wallace_ripple",
@@ -104,8 +104,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214257.4342422,
-    "duration_ms": 4.585900009260513
+    "timestamp": 1794215417.9055543,
+    "duration_ms": 11.271299998043105
   },
   "02654933c39e8d17bf4e20ef1b2dea356863bbbf3e9c3dff5bce46ba4b080af8": {
     "block_name": "mul_b4s_wallace_ripple",
@@ -113,8 +113,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214257.4415495,
-    "duration_ms": 4.862500005401671
+    "timestamp": 1794215417.9217794,
+    "duration_ms": 11.97140000294894
   },
   "f00cfc10c3a40d22a92667832a161ef497a4fe35b89682e16b467242c9e27f70": {
     "block_name": "mul_b4_array_ripple",
@@ -122,8 +122,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214257.4485734,
-    "duration_ms": 4.683999999542721
+    "timestamp": 1794215417.938168,
+    "duration_ms": 11.1557000054745
   },
   "619e3b4d71aeb694fd5d3d54477731582163dcbf9844bc694cb1e4bdb0b37ca7": {
     "block_name": "mul_q2_wallace_ripple",
@@ -131,8 +131,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214257.477476,
-    "duration_ms": 1.830100009101443
+    "timestamp": 1794215418.0016634,
+    "duration_ms": 4.182300006505102
   },
   "92258148745e4d5a2a4317861fd6d982cf3faed4a809c14000ad6a32c4325edc": {
     "block_name": "mul_q2_array_ripple",
@@ -140,8 +140,8 @@
     "method": "exhaustive",
     "n_vectors": 256,
     "passed": true,
-    "timestamp": 1794214257.4812536,
-    "duration_ms": 1.8468000052962452
+    "timestamp": 1794215418.0103805,
+    "duration_ms": 3.995899998699315
   },
   "98fe8f9d9754d7dee67764f4d46a0730f5ce5cbfc09d60b8c6cbdfcd304b4c7a": {
     "block_name": "mul_b8s_wallace_ripple",
@@ -149,8 +149,8 @@
     "method": "random+corners",
     "n_vectors": 2097,
     "passed": true,
-    "timestamp": 1794214257.6201096,
-    "duration_ms": 137.21129999612458
+    "timestamp": 1794215418.321399,
+    "duration_ms": 306.3615999999456
   },
   "71e587004584e6793028561b6cfc529aa1a0ea4a85dbbcdc04838b88877f3a49": {
     "block_name": "adder_t3_ripple",
@@ -158,8 +158,8 @@
     "method": "exhaustive",
     "n_vectors": 2187,
     "passed": true,
-    "timestamp": 1794214256.5653138,
-    "duration_ms": 10.794999994686805
+    "timestamp": 1794215415.6261346,
+    "duration_ms": 27.753099988331087
   },
   "f7c9ff41e3918647705e9343ce229aa9ab55d7790e8e07b9ac0cd03a9d4f6a6f": {
     "block_name": "adder_t6_ripple",
@@ -167,8 +167,8 @@
     "method": "random+corners",
     "n_vectors": 2195,
     "passed": true,
-    "timestamp": 1794214256.6436608,
-    "duration_ms": 17.421399999875575
+    "timestamp": 1794215415.8039277,
+    "duration_ms": 48.06749999988824
   },
   "6c6bc3d9df94d5ee1ae0526163f711af349900b49b1b7519a161452c7560b5d8": {
     "block_name": "adder_t6_csel:3",
@@ -176,8 +176,8 @@
     "method": "random+corners",
     "n_vectors": 2195,
     "passed": true,
-    "timestamp": 1794214256.663889,
-    "duration_ms": 1.1349999986123294
+    "timestamp": 1794215415.8535206,
+    "duration_ms": 3.3306999976048246
   },
   "fb739e5e4d44ed4924cb3b981bf2fceedf0a086c4dac803785c6d0b34433994d": {
     "block_name": "signdet_t3_tree",
@@ -185,8 +185,8 @@
     "method": "exhaustive",
     "n_vectors": 27,
     "passed": true,
-    "timestamp": 1794214256.7553964,
-    "duration_ms": 0.3485000052023679
+    "timestamp": 1794215416.1389546,
+    "duration_ms": 1.9379000004846603
   },
   "becf0725fc56262fff98fe8ca64169a30df8dee8fea4140b04366a4646652458": {
     "block_name": "signdet_t6_tree",
@@ -194,8 +194,8 @@
     "method": "exhaustive",
     "n_vectors": 729,
     "passed": true,
-    "timestamp": 1794214256.7639802,
-    "duration_ms": 4.156299997703172
+    "timestamp": 1794215416.1607535,
+    "duration_ms": 11.091100008343346
   },
   "a9d54a44949c585126de349d727a0803a000bad0cec3ed22f293e806e626cb4c": {
     "block_name": "cmp_t3_tree",
@@ -203,8 +203,8 @@
     "method": "exhaustive",
     "n_vectors": 729,
     "passed": true,
-    "timestamp": 1794214256.7688797,
-    "duration_ms": 0.35260000731796026
+    "timestamp": 1794215416.1761577,
+    "duration_ms": 0.9774999925866723
   },
   "09371138169802358bcbf028ce78afeae0529827168374a18ee5081bbf82a9de": {
     "block_name": "cmp_t3_sub:ripple",
@@ -212,8 +212,8 @@
     "method": "exhaustive",
     "n_vectors": 729,
     "passed": true,
-    "timestamp": 1794214256.770636,
-    "duration_ms": 0.41849999979604036
+    "timestamp": 1794215416.1809983,
+    "duration_ms": 1.1277000012341887
   },
   "fa84300c689668ba36f08596ad698cb19a7fffc9f2e2a5cdeddf566f94d0d178": {
     "block_name": "cmp_t5_tree",
@@ -221,8 +221,8 @@
     "method": "random+corners",
     "n_vectors": 2097,
     "passed": true,
-    "timestamp": 1794214256.775452,
-    "duration_ms": 0.8740000048419461
+    "timestamp": 1794215416.1934075,
+    "duration_ms": 2.0936999935656786
   },
   "7b35b8511145a5a7d5c11124c2fcc3667fe92bf68b0260070f87c0a8785974c3": {
     "block_name": "mul_t3_wallace_ripple",
@@ -230,8 +230,8 @@
     "method": "exhaustive",
     "n_vectors": 729,
     "passed": true,
-    "timestamp": 1794214257.4610007,
-    "duration_ms": 10.783499994431622
+    "timestamp": 1794215417.9665484,
+    "duration_ms": 24.832600000081584
   },
   "5cfd08a465e91eccb07d8cb046a608608ce65cd02d225d106e4556ae63cbaf31": {
     "block_name": "mul_t3_array_ripple",
@@ -239,8 +239,8 @@
     "method": "exhaustive",
     "n_vectors": 729,
     "passed": true,
-    "timestamp": 1794214257.4738636,
-    "duration_ms": 10.842400006367825
+    "timestamp": 1794215417.9932153,
+    "duration_ms": 22.70169999974314
   },
   "feca844cc37abb65f0819b7c2d921521dadf71a0e118c6e008a120215b25407e": {
     "block_name": "mul_t5_wallace_ripple",
@@ -248,8 +248,8 @@
     "method": "random+corners",
     "n_vectors": 2097,
     "passed": true,
-    "timestamp": 1794214257.700781,
-    "duration_ms": 78.04519998899195
+    "timestamp": 1794215418.503617,
+    "duration_ms": 177.43310000514612
   },
   "132c69ad3ea733d58c7ecf50d86f4c21cd0e469d2384fdccd3ae3a55f64e9dc4": {
     "block_name": "alu_b8",
@@ -257,8 +257,8 @@
     "method": "random+corners",
     "n_vectors": 1122,
     "passed": true,
-    "timestamp": 1794214256.697358,
-    "duration_ms": 1.3713000080315396
+    "timestamp": 1794215415.976339,
+    "duration_ms": 3.5872000007657334
   },
   "d4cc8a362ccf83a41768cbe133edef715ad043630120456b1e51e2875b33f364": {
     "block_name": "alu_t6",
@@ -266,7 +266,7 @@
     "method": "random+corners",
     "n_vectors": 1171,
     "passed": true,
-    "timestamp": 1794214256.700414,
-    "duration_ms": 1.5962000034051016
+    "timestamp": 1794215415.987544,
+    "duration_ms": 5.231000002822839
   }
 }

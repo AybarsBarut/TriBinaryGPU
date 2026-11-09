@@ -77,6 +77,12 @@ def cmd_run(args) -> int:
         return 1
 
     print(f"Running experiment from {exp_path}...")
+    if "noise" in exp_path.name or "sensitivity" in exp_path.name:
+        from .experiment import ExperimentRunner
+        runner = ExperimentRunner(exp_path)
+        runner.run()
+        return 0
+
     if "m3" in exp_path.name:
         from .micro.m3_experiment import run_m3_experiment, save_m3_results
         res = run_m3_experiment()
@@ -162,6 +168,13 @@ def cmd_review(args) -> int:
     return 0
 
 
+def cmd_report(args) -> int:
+    from .report import generate_markdown_report
+    out = generate_markdown_report()
+    print(f"Report successfully generated at: {out}")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(prog="radixlab", description="RadixLab CLI")
     sub = parser.add_subparsers(dest="subcommand", required=True)
@@ -173,6 +186,9 @@ def main():
     p_r = sub.add_parser("run", help="Run an experiment YAML")
     p_r.add_argument("config", help="Path to experiment YAML")
     p_r.set_defaults(func=cmd_run)
+
+    p_rep = sub.add_parser("report", help="Generate automated scientific report (docs/report.md)")
+    p_rep.set_defaults(func=cmd_report)
 
     p_a = sub.add_parser("assumptions", help="Display assumption parameters catalog")
     p_a.set_defaults(func=cmd_assumptions)

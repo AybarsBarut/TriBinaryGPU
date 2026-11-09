@@ -1,0 +1,68 @@
+{
+  "config": {
+    "experiment_id": "h1_sensitivity_sweep",
+    "hypothesis_id": "H1_H2",
+    "type": "sensitivity",
+    "comparison_mode": "iso-precision",
+    "delta_threshold": 0.1,
+    "n_samples": 1024,
+    "variation": 0.5,
+    "base_seed": 42,
+    "outputs": {
+      "json": "results/h1_sensitivity_results.json"
+    }
+  },
+  "provenance": {
+    "commit": "85a2fb1a43833435d790e0152037fe8108df850a",
+    "dirty": true,
+    "python_version": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "timestamp": "2026-11-09T09:09:56Z"
+  },
+  "duration_sec": 5.381434202194214,
+  "data": {
+    "nominal_saving": 0.42600000000000005,
+    "win_fraction": 1.0,
+    "strong_win_fraction": 1.0,
+    "outcome_label": "SUPPORTED",
+    "percentiles": [
+      0.18465415177794342,
+      0.43394767295888886,
+      0.6542089389243578
+    ],
+    "top_tornado": [
+      {
+        "param": "ternary.energy_per_transistor",
+        "swing_pct": 134.74178372126343
+      },
+      {
+        "param": "ternary.tau",
+        "swing_pct": 0.0
+      },
+      {
+        "param": "ternary.area_per_transistor",
+        "swing_pct": 0.0
+      },
+      {
+        "param": "ternary.leakage_per_transistor",
+        "swing_pct": 0.0
+      },
+      {
+        "param": "ternary.maturity_factor",
+        "swing_pct": 0.0
+      },
+      {
+        "param": "ternary.STI.transistors",
+        "swing_pct": 0.0
+      },
+      {
+        "param": "ternary.STI.delay_stages",
+        "swing_pct": 0.0
+      },
+      {
+        "param": "ternary.NTI.transistors",
+        "swing_pct": 0.0
+      }
+    ]
+  }
+}

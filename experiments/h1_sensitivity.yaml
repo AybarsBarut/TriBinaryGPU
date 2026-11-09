@@ -1,0 +1,13 @@
+# RadixLab Experiment: H1 & H2 Parameter Sensitivity (Tornado & Global Monte Carlo)
+experiment_id: h1_sensitivity_sweep
+hypothesis_id: H1_H2
+type: sensitivity
+comparison_mode: iso-precision
+
+delta_threshold: 0.10
+n_samples: 1024
+variation: 0.50  # +/- 50% parameter range
+base_seed: 42
+
+outputs:
+  json: results/h1_sensitivity_results.json

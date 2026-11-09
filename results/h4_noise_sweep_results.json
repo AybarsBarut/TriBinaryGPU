@@ -1,0 +1,250 @@
+{
+  "config": {
+    "experiment_id": "h4_noise_sweep",
+    "hypothesis_id": "H4",
+    "type": "noise",
+    "comparison_mode": "iso-precision",
+    "sigmas": [
+      0.02,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "n_symbols": 50000,
+    "base_seed": 42,
+    "outputs": {
+      "json": "results/h4_noise_sweep_results.json"
+    }
+  },
+  "provenance": {
+    "commit": "85a2fb1a43833435d790e0152037fe8108df850a",
+    "dirty": true,
+    "python_version": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "timestamp": "2026-11-09T09:09:53Z"
+  },
+  "duration_sec": 0.3916800022125244,
+  "data": {
+    "noise_sweeps": {
+      "b": [
+        {
+          "sigma": 0.02,
+          "analytical_ser": 3.056696706382875e-138,
+          "empirical_ser": 0.0,
+          "ci": [
+            0.0,
+            7.377486758288229e-05
+          ],
+          "binomial_p_val": 1.0
+        },
+        {
+          "sigma": 0.05,
+          "analytical_ser": 7.619853024160595e-24,
+          "empirical_ser": 0.0,
+          "ci": [
+            0.0,
+            7.377486758288229e-05
+          ],
+          "binomial_p_val": 1.0
+        },
+        {
+          "sigma": 0.1,
+          "analytical_ser": 2.8665157187919455e-07,
+          "empirical_ser": 0.0,
+          "ci": [
+            0.0,
+            7.377486758288229e-05
+          ],
+          "binomial_p_val": 1.0
+        },
+        {
+          "sigma": 0.15,
+          "analytical_ser": 0.0004290603331968374,
+          "empirical_ser": 0.00048,
+          "ci": [
+            0.0003075685045999463,
+            0.0007141183151926909
+          ],
+          "binomial_p_val": 0.5877646374624372
+        },
+        {
+          "sigma": 0.2,
+          "analytical_ser": 0.006209665325776139,
+          "empirical_ser": 0.00644,
+          "ci": [
+            0.005757639698827773,
+            0.0071805718898695714
+          ],
+          "binomial_p_val": 0.5125553989857057
+        },
+        {
+          "sigma": 0.25,
+          "analytical_ser": 0.022750131948179216,
+          "empirical_ser": 0.02226,
+          "ci": [
+            0.02098467657526806,
+            0.023591196064775413
+          ],
+          "binomial_p_val": 0.4716256373041221
+        },
+        {
+          "sigma": 0.3,
+          "analytical_ser": 0.0477903522728147,
+          "empirical_ser": 0.04748,
+          "ci": [
+            0.045632274826322136,
+            0.049380484824186
+          ],
+          "binomial_p_val": 0.7531715804545869
+        }
+      ],
+      "t": [
+        {
+          "sigma": 0.02,
+          "analytical_ser": 4.9767523985037444e-36,
+          "empirical_ser": 0.0,
+          "ci": [
+            0.0,
+            7.377486758288229e-05
+          ],
+          "binomial_p_val": 1.0
+        },
+        {
+          "sigma": 0.05,
+          "analytical_ser": 3.8220209583892605e-07,
+          "empirical_ser": 0.0,
+          "ci": [
+            0.0,
+            7.377486758288229e-05
+          ],
+          "binomial_p_val": 1.0
+        },
+        {
+          "sigma": 0.1,
+          "analytical_ser": 0.008279553767701519,
+          "empirical_ser": 0.00852,
+          "ci": [
+            0.007733025525983382,
+            0.009364803281552578
+          ],
+          "binomial_p_val": 0.553608431350161
+        },
+        {
+          "sigma": 0.15,
+          "analytical_ser": 0.06372046969708627,
+          "empirical_ser": 0.0635,
+          "ci": [
+            0.06137789770432448,
+            0.0656729483929396
+          ],
+          "binomial_p_val": 0.8475490821269429
+        },
+        {
+          "sigma": 0.2,
+          "analytical_ser": 0.14086636488914034,
+          "empirical_ser": 0.13838,
+          "ci": [
+            0.13536443637202383,
+            0.14143761123670842
+          ],
+          "binomial_p_val": 0.11092136268095881
+        },
+        {
+          "sigma": 0.25,
+          "analytical_ser": 0.2115403385752761,
+          "empirical_ser": 0.21164,
+          "ci": [
+            0.2080664775538199,
+            0.215247029135486
+          ],
+          "binomial_p_val": 0.9563362385037522
+        },
+        {
+          "sigma": 0.3,
+          "analytical_ser": 0.26977117461819067,
+          "empirical_ser": 0.26834,
+          "ci": [
+            0.26445970393500395,
+            0.2722472066146736
+          ],
+          "binomial_p_val": 0.4743647009928593
+        }
+      ],
+      "q": [
+        {
+          "sigma": 0.02,
+          "analytical_ser": 5.894810152276703e-17,
+          "empirical_ser": 0.0,
+          "ci": [
+            0.0,
+            7.377486758288229e-05
+          ],
+          "binomial_p_val": 1.0
+        },
+        {
+          "sigma": 0.05,
+          "analytical_ser": 0.0006435904997952574,
+          "empirical_ser": 0.00062,
+          "ci": [
+            0.0004212975759129903,
+            0.0008799260800624314
+          ],
+          "binomial_p_val": 0.9296725082766691
+        },
+        {
+          "sigma": 0.1,
+          "analytical_ser": 0.0716855284092221,
+          "empirical_ser": 0.07186,
+          "ci": [
+            0.06961123053227586,
+            0.07415862467476517
+          ],
+          "binomial_p_val": 0.876013527301194
+        },
+        {
+          "sigma": 0.15,
+          "analytical_ser": 0.19989039435375813,
+          "empirical_ser": 0.1996,
+          "ci": [
+            0.19610405610950915,
+            0.20313085241698342
+          ],
+          "binomial_p_val": 0.8755943710133253
+        },
+        {
+          "sigma": 0.2,
+          "analytical_ser": 0.3034925714454646,
+          "empirical_ser": 0.30204,
+          "ci": [
+            0.2980170972999244,
+            0.3060858957938255
+          ],
+          "binomial_p_val": 0.48371315417379757
+        },
+        {
+          "sigma": 0.25,
+          "analytical_ser": 0.3787388063203845,
+          "empirical_ser": 0.38018,
+          "ci": [
+            0.3759221461973093,
+            0.3844517684489875
+          ],
+          "binomial_p_val": 0.5068174210718561
+        },
+        {
+          "sigma": 0.3,
+          "analytical_ser": 0.433886041130958,
+          "empirical_ser": 0.43212,
+          "ci": [
+            0.4277720084257851,
+            0.4364758739595192
+          ],
+          "binomial_p_val": 0.42715702992589644
+        }
+      ]
+    }
+  }
+}
