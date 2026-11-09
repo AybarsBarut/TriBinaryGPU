@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use RadixLab in your research, please cite it as below."
+authors:
+  - family-names: "RadixLab Contributors"
+    given-names: "Scientific Architecture Research Group"
+title: "RadixLab: Binary vs Multi-Valued Logic GPU Simulation Laboratory"
+version: 0.1.0
+date-released: 2026-11-09
+url: "https://github.com/radixlab/radixlab"
+license: "Apache-2.0"
+keywords:
+  - "computer-architecture"
+  - "ternary-logic"
+  - "quaternary-logic"
+  - "gpu-simulation"
+  - "bitnet"
+  - "radix-economy"
