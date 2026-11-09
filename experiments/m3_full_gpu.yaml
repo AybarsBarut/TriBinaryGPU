@@ -1,0 +1,27 @@
+# RadixLab Experiment: M3 Full Multi-SM GPU Benchmarking (32 Lanes, 4 SMs)
+# Covers all 5 designs with full effect decomposition
+experiment_id: m3_full_gpu_benchmarking
+type: full_gpu
+comparison_mode: iso-precision
+
+designs:
+  - GPU-B      # Binary reference
+  - GPU-T      # Balanced ternary
+  - GPU-BT     # Binary hardware, ternary 2-bit/trit encoding (control)
+  - GPU-Q-1b   # Quaternary logic, binary 1-bit memory
+  - GPU-Q-2b   # Quaternary logic, MLC 2-bit memory
+
+dimensions:
+  n_sm: 4
+  lanes_per_sm: 8
+  total_lanes: 32
+
+workloads:
+  - vec_add
+  - gemm
+  - bitnet_mlp
+  - raster_triangle
+  - circle_sdf
+
+outputs:
+  json: results/m3_full_gpu_results.json

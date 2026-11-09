@@ -77,6 +77,19 @@ def cmd_run(args) -> int:
         return 1
 
     print(f"Running experiment from {exp_path}...")
+    if "m3" in exp_path.name:
+        from .micro.m3_experiment import run_m3_experiment, save_m3_results
+        res = run_m3_experiment()
+        out = save_m3_results(res)
+        print(f"Results saved to {out}")
+
+        print("\n--- Multi-SM GPU Effect Decomposition Summary (32 Lanes, 4 SMs) ---")
+        for item in res["runs"]:
+            wl = item["workload"]
+            d = item["decomposition"]
+            print(f"[{wl:<15}] Total (T/B): {d['energy_ratio_total_T_vs_B']}x | Encoding (BT/B): {d['energy_ratio_encoding_BT_vs_B']}x | HW (T/BT): {d['energy_ratio_hardware_T_vs_BT']}x | MLC (Q2b/Q1b): {d['mlc_memory_gain_Q2b_vs_Q1b']}x")
+        return 0
+
     if "m2" in exp_path.name:
         from .micro.mini_gpu_compare import run_mini_gpu_experiment, save_mini_gpu_results
         res = run_mini_gpu_experiment()

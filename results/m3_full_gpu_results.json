@@ -1,0 +1,416 @@
+{
+  "experiment": "m3_full_gpu_benchmarking",
+  "date": "2026-11-09",
+  "seed": 42,
+  "n_sm": 4,
+  "lanes_per_sm": 8,
+  "total_lanes": 32,
+  "runs": [
+    {
+      "workload": "vec_add",
+      "metrics_by_design": {
+        "GPU-B": {
+          "design": "GPU-B",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 5,
+          "clock_cycle_ps": 400.0,
+          "execution_time_ns": 2.0,
+          "alu_gate_area_um2": 17420.800000000003,
+          "rf_area_um2": 4915.2,
+          "total_area_um2": 22336.000000000004,
+          "alu_transistors": 174208.0,
+          "total_energy_fj": 9272.800000000001,
+          "throughput_gops": 79.99999996
+        },
+        "GPU-T": {
+          "design": "GPU-T",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 5,
+          "clock_cycle_ps": 425.0,
+          "execution_time_ns": 2.125,
+          "alu_gate_area_um2": 18656.000000000004,
+          "rf_area_um2": 4505.6,
+          "total_area_um2": 23161.600000000006,
+          "alu_transistors": 186560.0,
+          "total_energy_fj": 6636.0,
+          "throughput_gops": 75.29411761162629
+        },
+        "GPU-BT": {
+          "design": "GPU-BT",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 5,
+          "clock_cycle_ps": 520.0,
+          "execution_time_ns": 2.6,
+          "alu_gate_area_um2": 31110.4,
+          "rf_area_um2": 6758.4,
+          "total_area_um2": 37868.8,
+          "alu_transistors": 311104.0,
+          "total_energy_fj": 14882.400000000001,
+          "throughput_gops": 61.53846151479289
+        },
+        "GPU-Q-1b": {
+          "design": "GPU-Q-1b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 5,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 1.2,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 3613.2000000000003,
+          "throughput_gops": 133.33333322222222
+        },
+        "GPU-Q-2b": {
+          "design": "GPU-Q-2b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 5,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 1.2,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 3613.2000000000003,
+          "throughput_gops": 133.33333322222222
+        }
+      },
+      "decomposition": {
+        "energy_ratio_total_T_vs_B": 0.7156,
+        "energy_ratio_encoding_BT_vs_B": 1.605,
+        "energy_ratio_hardware_T_vs_BT": 0.4459,
+        "mlc_memory_gain_Q2b_vs_Q1b": 1.0
+      }
+    },
+    {
+      "workload": "gemm",
+      "metrics_by_design": {
+        "GPU-B": {
+          "design": "GPU-B",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 400.0,
+          "execution_time_ns": 4.4,
+          "alu_gate_area_um2": 17420.800000000003,
+          "rf_area_um2": 4915.2,
+          "total_area_um2": 22336.000000000004,
+          "alu_transistors": 174208.0,
+          "total_energy_fj": 23466.0,
+          "throughput_gops": 79.99999998181818
+        },
+        "GPU-T": {
+          "design": "GPU-T",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 425.0,
+          "execution_time_ns": 4.675,
+          "alu_gate_area_um2": 18656.000000000004,
+          "rf_area_um2": 4505.6,
+          "total_area_um2": 23161.600000000006,
+          "alu_transistors": 186560.0,
+          "total_energy_fj": 13470.0,
+          "throughput_gops": 75.29411763095312
+        },
+        "GPU-BT": {
+          "design": "GPU-BT",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 520.0,
+          "execution_time_ns": 5.72,
+          "alu_gate_area_um2": 31110.4,
+          "rf_area_um2": 6758.4,
+          "total_area_um2": 37868.8,
+          "alu_transistors": 311104.0,
+          "total_energy_fj": 37182.00000000001,
+          "throughput_gops": 61.53846152770307
+        },
+        "GPU-Q-1b": {
+          "design": "GPU-Q-1b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.64,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 9221.2,
+          "throughput_gops": 133.33333328282828
+        },
+        "GPU-Q-2b": {
+          "design": "GPU-Q-2b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.64,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 9221.2,
+          "throughput_gops": 133.33333328282828
+        }
+      },
+      "decomposition": {
+        "energy_ratio_total_T_vs_B": 0.574,
+        "energy_ratio_encoding_BT_vs_B": 1.5845,
+        "energy_ratio_hardware_T_vs_BT": 0.3623,
+        "mlc_memory_gain_Q2b_vs_Q1b": 1.0
+      }
+    },
+    {
+      "workload": "bitnet_mlp",
+      "metrics_by_design": {
+        "GPU-B": {
+          "design": "GPU-B",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 400.0,
+          "execution_time_ns": 4.4,
+          "alu_gate_area_um2": 17420.800000000003,
+          "rf_area_um2": 4915.2,
+          "total_area_um2": 22336.000000000004,
+          "alu_transistors": 174208.0,
+          "total_energy_fj": 25212.0,
+          "throughput_gops": 79.99999998181818
+        },
+        "GPU-T": {
+          "design": "GPU-T",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 425.0,
+          "execution_time_ns": 4.675,
+          "alu_gate_area_um2": 18656.000000000004,
+          "rf_area_um2": 4505.6,
+          "total_area_um2": 23161.600000000006,
+          "alu_transistors": 186560.0,
+          "total_energy_fj": 16412.4,
+          "throughput_gops": 75.29411763095312
+        },
+        "GPU-BT": {
+          "design": "GPU-BT",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 520.0,
+          "execution_time_ns": 5.72,
+          "alu_gate_area_um2": 31110.4,
+          "rf_area_um2": 6758.4,
+          "total_area_um2": 37868.8,
+          "alu_transistors": 311104.0,
+          "total_energy_fj": 40300.00000000001,
+          "throughput_gops": 61.53846152770307
+        },
+        "GPU-Q-1b": {
+          "design": "GPU-Q-1b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.64,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 9252.400000000001,
+          "throughput_gops": 133.33333328282828
+        },
+        "GPU-Q-2b": {
+          "design": "GPU-Q-2b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 11,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.64,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 9252.400000000001,
+          "throughput_gops": 133.33333328282828
+        }
+      },
+      "decomposition": {
+        "energy_ratio_total_T_vs_B": 0.651,
+        "energy_ratio_encoding_BT_vs_B": 1.5984,
+        "energy_ratio_hardware_T_vs_BT": 0.4073,
+        "mlc_memory_gain_Q2b_vs_Q1b": 1.0
+      }
+    },
+    {
+      "workload": "raster_triangle",
+      "metrics_by_design": {
+        "GPU-B": {
+          "design": "GPU-B",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 400.0,
+          "execution_time_ns": 3.6,
+          "alu_gate_area_um2": 17420.800000000003,
+          "rf_area_um2": 4915.2,
+          "total_area_um2": 22336.000000000004,
+          "alu_transistors": 174208.0,
+          "total_energy_fj": 18858.0,
+          "throughput_gops": 79.99999997777778
+        },
+        "GPU-T": {
+          "design": "GPU-T",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 425.0,
+          "execution_time_ns": 3.825,
+          "alu_gate_area_um2": 18656.000000000004,
+          "rf_area_um2": 4505.6,
+          "total_area_um2": 23161.600000000006,
+          "alu_transistors": 186560.0,
+          "total_energy_fj": 11162.000000000002,
+          "throughput_gops": 75.29411762737408
+        },
+        "GPU-BT": {
+          "design": "GPU-BT",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 520.0,
+          "execution_time_ns": 4.68,
+          "alu_gate_area_um2": 31110.4,
+          "rf_area_um2": 6758.4,
+          "total_area_um2": 37868.8,
+          "alu_transistors": 311104.0,
+          "total_energy_fj": 29153.2,
+          "throughput_gops": 61.5384615253123
+        },
+        "GPU-Q-1b": {
+          "design": "GPU-Q-1b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.16,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 7290.799999999999,
+          "throughput_gops": 133.33333327160491
+        },
+        "GPU-Q-2b": {
+          "design": "GPU-Q-2b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.16,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 7290.799999999999,
+          "throughput_gops": 133.33333327160491
+        }
+      },
+      "decomposition": {
+        "energy_ratio_total_T_vs_B": 0.5919,
+        "energy_ratio_encoding_BT_vs_B": 1.5459,
+        "energy_ratio_hardware_T_vs_BT": 0.3829,
+        "mlc_memory_gain_Q2b_vs_Q1b": 1.0
+      }
+    },
+    {
+      "workload": "circle_sdf",
+      "metrics_by_design": {
+        "GPU-B": {
+          "design": "GPU-B",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 400.0,
+          "execution_time_ns": 3.6,
+          "alu_gate_area_um2": 17420.800000000003,
+          "rf_area_um2": 4915.2,
+          "total_area_um2": 22336.000000000004,
+          "alu_transistors": 174208.0,
+          "total_energy_fj": 21463.600000000002,
+          "throughput_gops": 79.99999997777778
+        },
+        "GPU-T": {
+          "design": "GPU-T",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 425.0,
+          "execution_time_ns": 3.825,
+          "alu_gate_area_um2": 18656.000000000004,
+          "rf_area_um2": 4505.6,
+          "total_area_um2": 23161.600000000006,
+          "alu_transistors": 186560.0,
+          "total_energy_fj": 13020.400000000001,
+          "throughput_gops": 75.29411762737408
+        },
+        "GPU-BT": {
+          "design": "GPU-BT",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 520.0,
+          "execution_time_ns": 4.68,
+          "alu_gate_area_um2": 31110.4,
+          "rf_area_um2": 6758.4,
+          "total_area_um2": 37868.8,
+          "alu_transistors": 311104.0,
+          "total_energy_fj": 33908.0,
+          "throughput_gops": 61.5384615253123
+        },
+        "GPU-Q-1b": {
+          "design": "GPU-Q-1b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.16,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 8759.6,
+          "throughput_gops": 133.33333327160491
+        },
+        "GPU-Q-2b": {
+          "design": "GPU-Q-2b",
+          "n_sm": 4,
+          "total_lanes": 32,
+          "max_cycles": 9,
+          "clock_cycle_ps": 240.0,
+          "execution_time_ns": 2.16,
+          "alu_gate_area_um2": 5260.800000000001,
+          "rf_area_um2": 2457.6,
+          "total_area_um2": 7718.4000000000015,
+          "alu_transistors": 52608.0,
+          "total_energy_fj": 8759.6,
+          "throughput_gops": 133.33333327160491
+        }
+      },
+      "decomposition": {
+        "energy_ratio_total_T_vs_B": 0.6066,
+        "energy_ratio_encoding_BT_vs_B": 1.5798,
+        "energy_ratio_hardware_T_vs_BT": 0.384,
+        "mlc_memory_gain_Q2b_vs_Q1b": 1.0
+      }
+    }
+  ],
+  "effect_decomposition": {}
+}
