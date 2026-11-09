@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+target/
+*.egg-info/
+dist/
+build/
+*.pyd
+*.so
+.cache/
+# Never commit secrets
+.env
+*.key
